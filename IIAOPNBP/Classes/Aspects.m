@@ -109,7 +109,7 @@ static NSString *const AspectsMessagePrefix = @"aspects_";
 ///////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - Private Helper
 
-static id aspect_add(id self, SEL selector, AspectOptions options, id block, NSError **error) {
+static id aspect_add(id self, SEL selector, AspectOptions options, id block, NSError * __autoreleasing *error) {
     NSCParameterAssert(self);
     NSCParameterAssert(selector);
     NSCParameterAssert(block);
@@ -130,7 +130,7 @@ static id aspect_add(id self, SEL selector, AspectOptions options, id block, NSE
     return identifier;
 }
 
-static BOOL aspect_remove(AspectIdentifier *aspect, NSError **error) {
+static BOOL aspect_remove(AspectIdentifier *aspect, NSError * __autoreleasing *error) {
     NSCAssert([aspect isKindOfClass:AspectIdentifier.class], @"Must have correct type.");
 
     __block BOOL success = NO;
@@ -602,8 +602,8 @@ static BOOL aspect_isSelectorAllowedAndTrack(NSObject *self, SEL selector, Aspec
                     while (topmostEntry.parentEntry) {
                         topmostEntry = topmostEntry.parentEntry;
                     }
-                    NSString *errorDescription = [NSString stringWithFormat:@"Error: %@ already hooked in %@. A method can only be hooked once per class hierarchy.", selectorName, NSStringFromClass(topmostEntry.trackedClass)];
-                    AspectError(AspectErrorSelectorAlreadyHookedInClassHierarchy, errorDescription);
+                    //NSString *errorDescription = [NSString stringWithFormat:@"Error: %@ already hooked in %@. A method can only be hooked once per class hierarchy.", selectorName, NSStringFromClass(topmostEntry.trackedClass)];
+                    //AspectError(AspectErrorSelectorAlreadyHookedInClassHierarchy, errorDescription);
                     return NO;
                 }else if (klass == currentClass) {
                     // Already modified and topmost!

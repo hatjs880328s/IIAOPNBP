@@ -1,7 +1,5 @@
 PODS:
-  - Aspects (1.4.1)
-  - IIAOPNBP (0.3.0):
-    - Aspects
+  - IIAOPNBP (0.4.0):
     - IISwiftBaseUti
   - IISwiftBaseUti (1.1.2):
     - IISwiftBaseUti/IIBaseUti (= 1.1.2)
@@ -18,7 +16,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Aspects
     - IISwiftBaseUti
     - SnapKit
 
@@ -27,8 +24,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  IIAOPNBP: 6b2b92459a3196d11293fd34d2897cc65f782b6a
+  IIAOPNBP: 07b065f7f24ebc747ee0974fe502606fbcc89a4f
   IISwiftBaseUti: cdc47a871dc3d08078d5b65e502b469aab3be58c
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 

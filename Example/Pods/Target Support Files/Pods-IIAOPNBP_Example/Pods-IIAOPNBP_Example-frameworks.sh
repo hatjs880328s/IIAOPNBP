@@ -153,13 +153,11 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IIAOPNBP/IIAOPNBP.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IISwiftBaseUti/IISwiftBaseUti.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IIAOPNBP/IIAOPNBP.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IISwiftBaseUti/IISwiftBaseUti.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"

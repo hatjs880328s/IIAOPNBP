@@ -11,6 +11,7 @@
 #endif
 
 #import "AOPMmapOCUtility.h"
+#import "Aspects.h"
 #import "IIPitchCoreOBJC.h"
 
 FOUNDATION_EXPORT double IIAOPNBPVersionNumber;
