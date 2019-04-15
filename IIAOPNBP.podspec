@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IIAOPNBP'
-  s.version          = '0.1.0'
+  s.version          = '0.3.0'
   s.summary          = '无埋点用户行为轨迹分析 & ASM核心代码'
 
 # This description is used to generate tags and improve search results.
@@ -34,15 +34,7 @@ Pod::Spec.new do |s|
 
   s.swift_version = '4.2'
 
-  s.source_files = 'IIAOPNBP/Classes/*.*'
-
-  s.subspec 'IIPitching' do |ss|
-      ss.source_files = 'IIAOPNBP/Classes/IIPitching/*.*'
-  end
-
-  s.subspec 'AOPMmapNBPUTCore' do |ss|
-      ss.source_files = 'IIAOPNBP/Classes/AOPMmapNBPUTCore/*.*'
-  end
+  s.source_files = 'IIAOPNBP/Classes/**/*'
   
   # s.resource_bundles = {
   #   'IIAOPNBP' => ['IIAOPNBP/Assets/*.png']

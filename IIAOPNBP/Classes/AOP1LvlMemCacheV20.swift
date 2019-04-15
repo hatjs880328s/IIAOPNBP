@@ -17,6 +17,7 @@
 //
 //
 import Foundation
+import IISwiftBaseUti
 
 protocol IAOPMemCache: NSObjectProtocol {
     

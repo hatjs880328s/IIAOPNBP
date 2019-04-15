@@ -1,14 +1,6 @@
 PODS:
   - Aspects (1.4.1)
-  - IIAOPNBP (0.1.0):
-    - Aspects
-    - IIAOPNBP/AOPMmapNBPUTCore (= 0.1.0)
-    - IIAOPNBP/IIPitching (= 0.1.0)
-    - IISwiftBaseUti
-  - IIAOPNBP/AOPMmapNBPUTCore (0.1.0):
-    - Aspects
-    - IISwiftBaseUti
-  - IIAOPNBP/IIPitching (0.1.0):
+  - IIAOPNBP (0.3.0):
     - Aspects
     - IISwiftBaseUti
   - IISwiftBaseUti (1.1.2):
@@ -36,7 +28,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  IIAOPNBP: 9c666830aeb1f5b354a9eab39c790c921afbf62d
+  IIAOPNBP: 6b2b92459a3196d11293fd34d2897cc65f782b6a
   IISwiftBaseUti: cdc47a871dc3d08078d5b65e502b469aab3be58c
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
