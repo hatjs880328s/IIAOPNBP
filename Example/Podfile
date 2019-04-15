@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IIAOPNBP_Example' do
+  pod 'IIAOPNBP', :path => '../'
+
+  target 'IIAOPNBP_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
