@@ -1,5 +1,5 @@
 PODS:
-  - IIAOPNBP (0.4.0):
+  - IIAOPNBP (0.5.0):
     - IISwiftBaseUti
   - IISwiftBaseUti (1.1.2):
     - IISwiftBaseUti/IIBaseUti (= 1.1.2)
@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IIAOPNBP: 07b065f7f24ebc747ee0974fe502606fbcc89a4f
+  IIAOPNBP: e6f35aa0e3b322d094c9882456fafc406656e773
   IISwiftBaseUti: cdc47a871dc3d08078d5b65e502b469aab3be58c
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
