@@ -170,3 +170,17 @@ public class WebVWEvent: GodfatherEvent {
 "\n"
     }
 }
+
+/// CustomInfo & opp-sendAction
+@objc public class CustomEvent: GodfatherEvent {
+    @objc open func setBaseInfo(info: String) {
+        super.setBaseInfo(eventSourceName: info, time: Date())
+        self.sourceName = info
+    }
+
+    override public var description: String {
+        return "C|" + sourceName + parametersJoinedCharacter + triggerDate.description +
+            parametersJoinedCharacter + superDescription +
+        "\n"
+    }
+}
