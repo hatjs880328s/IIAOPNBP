@@ -24,7 +24,7 @@ import Foundation
  
 */
 
-class GodfatherEvent: NSObject {
+public class GodfatherEvent: NSObject {
     
     var triggerDate: String = ""
     
@@ -141,7 +141,7 @@ class APIEvent: GodfatherEvent {
 }
 
 /// webview-loadDatatime - aop-sendAction
-class WebVWEvent: GodfatherEvent {
+public class WebVWEvent: GodfatherEvent {
 
     var milSecs: Int = 0
 
@@ -150,7 +150,7 @@ class WebVWEvent: GodfatherEvent {
         self.milSecs = milSecs
     }
 
-    override var description: String {
+    override public var description: String {
         return "W|" + sourceName + parametersJoinedCharacter + triggerDate.description +
             parametersJoinedCharacter + "\(milSecs)" + superDescription +
         "\n"
@@ -158,13 +158,13 @@ class WebVWEvent: GodfatherEvent {
 }
 
 /// WCDB-warning & error - opp-sendAction
-@objc class WCDBEvent: GodfatherEvent {
+@objc public class WCDBEvent: GodfatherEvent {
     @objc open func setBaseInfo(errorInfo: String) {
         super.setBaseInfo(eventSourceName: errorInfo, time: Date())
         self.sourceName = errorInfo
     }
 
-    override var description: String {
+    override public var description: String {
         return "WCDB|" + sourceName + parametersJoinedCharacter + triggerDate.description +
             parametersJoinedCharacter + superDescription +
 "\n"

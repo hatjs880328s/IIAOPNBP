@@ -34,7 +34,7 @@ class AOPEventFilter: NSObject {
         
         var sourcename = String()
         if let tb = aspectInfo.instance() as? UITableView {
-            if let tbVC = tb.viewController() {
+            if let tbVC = tb.iiViewController() {
                 let vcName = NSStringFromClass(object_getClass(tbVC)!)
                 sourcename += vcName + GodfatherSwizzing.sourceJoinedCharacter
             }
@@ -73,7 +73,7 @@ class AOPEventFilter: NSObject {
         var eventType = IIAOPControlEventType.uibutton
         let instance = aspectInfo.instance()
         if let tb = instance as? UIButton {
-            if let tbVC = tb.viewController() {
+            if let tbVC = tb.iiViewController() {
                 let vcName = NSStringFromClass(object_getClass(tbVC)!)
                 sourcename += vcName + GodfatherSwizzing.sourceJoinedCharacter
             }

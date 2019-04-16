@@ -27,7 +27,7 @@ extension Date {
     /// :param format: yyyy-MM-dd HH:mm:ss / yyyy-MM-dd / yyyyMMddHHmmss / MMddHHmmss
     ///
     /// returns: String
-    func dateToString(_ format: String) -> String {
+    public func dateToString(_ format: String) -> String {
         let formats = DateFormatter()
         formats.dateFormat = format
         formats.timeZone = TimeZone(identifier: "GMT8")
@@ -38,13 +38,13 @@ extension Date {
 
 extension UIResponder {
     /// get uiresponder first viewcontroller(belongs which vc)
-    @objc func viewController() -> UIViewController? {
+    @objc public func iiViewController() -> UIViewController? {
         if self.isKind(of: UIViewController.self) { return self as? UIViewController }
         if self.next == nil { return nil }
         if (self.next?.isKind(of: UIViewController.self))! {
             return self.next as? UIViewController
         } else {
-            return self.next!.viewController()
+            return self.next!.iiViewController()
         }
     }
 }
@@ -58,7 +58,7 @@ extension NSString {
     }
     
     ///sub str to arr<string>
-    func subStrEachParameterCharacter(countPara: Int) -> Array<String> {
+    public func subStrEachParameterCharacter(countPara: Int) -> Array<String> {
         assert(countPara != 0, "coutld't be 0")
         
         var strArr: Array<String> = Array()
@@ -79,7 +79,7 @@ extension NSString {
 }
 
 /// debug print log in console
-func DEBUGPrintLog(_ logInfo: String) {
+public func DEBUGPrintLog(_ logInfo: String) {
     func printPro(str: String) -> Bool {
         print(str)
         return true

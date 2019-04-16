@@ -137,7 +137,7 @@ class WebViewSwizzing: GodfatherSwizzing {
 }
 
 /// each Event upload hex info[require]
-class MMAPUserInfo: NSObject {
+public class MMAPUserInfo: NSObject {
 
     @objc public static var userID: String = ""//IMPUserModel.activeInstance()?.exeofidString() ?? ""
 
@@ -153,7 +153,7 @@ class MMAPUserInfo: NSObject {
 }
 
 /// aop core manager---start service here [iipitching ^ aopnbpcore]
-class AOPNBPCoreManagerCenter: NSObject {
+public class AOPNBPCoreManagerCenter: NSObject {
     
     private static var shareInstance: AOPNBPCoreManagerCenter!
     
@@ -191,7 +191,7 @@ class AOPNBPCoreManagerCenter: NSObject {
     }
 
     /// flag control it [custom log write]
-    @objc open func writeCustomLog(event: GodfatherEvent) {
+    @objc public func writeCustomLog(event: GodfatherEvent) {
         if !self.customLogWriteFlag {
             return
         }

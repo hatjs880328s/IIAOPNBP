@@ -20,7 +20,7 @@
 import Foundation
 import UIKit
 
-class AOPEventUploadCenter: NSObject {
+public class AOPEventUploadCenter: NSObject {
     
     private static let taskID = NSUUID().uuidString
     
@@ -42,7 +42,7 @@ class AOPEventUploadCenter: NSObject {
     }
     
     /// AOP-NBP-uploadCenter service start
-    func startService() {
+    public func startService() {
         DispatchQueue.once(taskid: AOPEventUploadCenter.taskID) {
             timer = Timer.scheduledTimer(timeInterval: 20, target: self, selector: #selector(AOPEventUploadCenter.uploadEvents), userInfo: nil, repeats: true)
         }

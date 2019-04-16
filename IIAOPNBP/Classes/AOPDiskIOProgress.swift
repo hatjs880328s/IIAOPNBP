@@ -21,7 +21,7 @@ import Foundation
  4.if noah_shan folder exists one file return else analyze all expect newest file
  */
 
-class AOPDiskIOProgress {
+public class AOPDiskIOProgress {
     
     private init() {
         AOPDiskIOProgressUtility().createTheDir()
@@ -37,7 +37,7 @@ class AOPDiskIOProgress {
     }
     
     /// set
-    func writeEventsToDisk(with info: [String: [GodfatherEvent]]) {
+    public func writeEventsToDisk(with info: [String: [GodfatherEvent]]) {
         for (eachKey, eachValue) in info {
             var eventStr = ""
             for eachItem in eachValue {
