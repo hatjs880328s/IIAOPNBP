@@ -10,7 +10,7 @@ import Foundation
 import IISwiftBaseUti
 
 /// Traverse all classes of this APP & progress them
-class IIPitchUtility: NSObject {
+public class IIPitchUtility: NSObject {
     
     private static var shareInstance: IIPitchUtility!
     

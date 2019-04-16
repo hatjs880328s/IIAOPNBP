@@ -124,7 +124,7 @@ class SendActionEvent: GodfatherEvent {
 }
 
 /// api-event - opp-sendAction
-class APIEvent: GodfatherEvent {
+public class APIEvent: GodfatherEvent {
 
     var requestType: Int = 0
 
@@ -133,7 +133,7 @@ class APIEvent: GodfatherEvent {
         self.requestType = requestType
     }
 
-    override var description: String {
+    override public var description: String {
         return "A|" + sourceName + parametersJoinedCharacter + triggerDate.description +
             parametersJoinedCharacter + "\(requestType)" + superDescription +
         "\n"
