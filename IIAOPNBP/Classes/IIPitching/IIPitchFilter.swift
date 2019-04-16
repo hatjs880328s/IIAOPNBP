@@ -9,17 +9,17 @@
 import Foundation
 
 /// Filter-progress CLASS<sys class> & METHOD<sys method>
-class IIPitchFilter: NSObject {
+public class IIPitchFilter: NSObject {
 
     /// oc-class white list
-    @objc public static let ocClassFilterArr: [String] =
+    @objc public static var ocClassFilterArr: [String] =
     ["ChatMediaCell", "ActionForMessage", "SocketManage", "CacheForMessage"]
     
     /// ignore shouldn't progress classes [snapkit start...]
-    @objc public static let filterArr: [String] = ["TABLESwizzing", "VCSwizzing", "ApplicitonSwizzing", "Aspect", "AOPNBPCoreManagerCenter", "GodfatherSwizzingPostnotification", "AOPNotificaitonCenter", "SnapKit", "JPush", "JPUSH", "IFly", "UMSocial", "AppDelegate", "AMap", "SD", "MJ", "OOP", "__", "Aspect", "TraverseCoreOBJC", "IIPitchFilter", "IITraverseUtility", "CleanKeychain", "WCT", "RCT", "FM", "AOPMmapOCUtility", "String", "NSDate", "AFN", "NSUUID", "SessionDelegate", "UIControl"]
+    @objc public static var filterArr: [String] = ["TABLESwizzing", "VCSwizzing", "ApplicitonSwizzing", "Aspect", "AOPNBPCoreManagerCenter", "GodfatherSwizzingPostnotification", "AOPNotificaitonCenter", "SnapKit", "JPush", "JPUSH", "IFly", "UMSocial", "AppDelegate", "AMap", "SD", "MJ", "OOP", "__", "Aspect", "TraverseCoreOBJC", "IIPitchFilter", "IITraverseUtility", "CleanKeychain", "WCT", "RCT", "FM", "AOPMmapOCUtility", "String", "NSDate", "AFN", "NSUUID", "SessionDelegate", "UIControl"]
     
     /// ignore shouldn't progress methods  [mj start...]
-    @objc public static let filterFunctionArr: [String] = ["init", "startServices", "cxx_destruct", "AnalyzeNetWorkWithNoti", "description", "heightForRowAt", "numberOfRowsInSection", "cellForRowAt", "didSelectRowAt", "numberOfSections", "mj", "heightForHeaderInSection", "heightForFooterInSection", "viewForHeaderInSection", "viewForFooterInSection", "didReceiveWSResponse", "getMessageDicByResponseDic","setLocalSessions"]
+    @objc public static var filterFunctionArr: [String] = ["init", "startServices", "cxx_destruct", "AnalyzeNetWorkWithNoti", "description", "heightForRowAt", "numberOfRowsInSection", "cellForRowAt", "didSelectRowAt", "numberOfSections", "mj", "heightForHeaderInSection", "heightForFooterInSection", "viewForHeaderInSection", "viewForFooterInSection", "didReceiveWSResponse", "getMessageDicByResponseDic","setLocalSessions"]
     
     /// bundle name - progress swift class
     /// Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String + "."
