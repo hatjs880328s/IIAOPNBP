@@ -271,6 +271,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IIAOPNBP_Example/Pods-IIAOPNBP_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IIAOPNBP/IIAOPNBP.framework",
+				"${BUILT_PRODUCTS_DIR}/III18N/III18N.framework",
 				"${BUILT_PRODUCTS_DIR}/IISwiftBaseUti/IISwiftBaseUti.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
@@ -279,6 +280,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IIAOPNBP.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/III18N.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IISwiftBaseUti.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
