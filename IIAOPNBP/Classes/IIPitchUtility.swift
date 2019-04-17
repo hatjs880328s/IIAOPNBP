@@ -26,9 +26,10 @@ public class IIPitchUtility: NSObject {
     }
     
     /// Custom [asm pitching code]
-    @objc public var insertCode: ((_ id: AspectInfo) -> Void)! {
+    @objc public var insertCode: ((_ id: AspectInfo) -> Void)? {
         didSet {
-            self.realInsertCode = insertCode
+            guard let hereInsertCode = insertCode else { return }
+            self.realInsertCode = hereInsertCode
         }
     }
     
