@@ -10,21 +10,21 @@ import Foundation
 import IISwiftBaseUti
 
 /// Traverse all classes of this APP & progress them
-public class IIPitchUtility: NSObject {
-    
+public class IIPitchUtility {
+
     private static var shareInstance: IIPitchUtility!
-    
-    private override init() {
-        super.init()
+
+    private init() {
+        //super.init()
     }
-    
-    @objc public static func getInstance() -> IIPitchUtility {
+
+    public static func getInstance() -> IIPitchUtility {
         if shareInstance == nil {
             shareInstance = IIPitchUtility()
         }
         return shareInstance
     }
-    
+
     /// Custom [asm pitching code]
     @objc public var insertCode: ((_ id: AspectInfo) -> Void)? {
         didSet {
