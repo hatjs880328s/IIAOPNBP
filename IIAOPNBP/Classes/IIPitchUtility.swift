@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import IISwiftBaseUti
 
 /// Traverse all classes of this APP & progress them
 public class IIPitchUtility {
@@ -32,7 +31,7 @@ public class IIPitchUtility {
             self.realInsertCode = hereInsertCode
         }
     }
-    
+
     /// [asm pitching code]
     private var realInsertCode: @convention(block) (_ id: AspectInfo) -> Void = { aspectInfo in
         let className = aspectInfo.instance()
@@ -61,7 +60,7 @@ public class IIPitchUtility {
         }
 
     }
-    
+
     /// Start service[swift methods use @objc dynamic]
     @objc public func startService() {
         let ins = IIPitchCoreOBJC()
@@ -76,7 +75,7 @@ public class IIPitchUtility {
             })
         }
     }
-    
+
     /// runtime get class.type from str value
     ///
     /// - Returns: turpleInfo
@@ -84,7 +83,7 @@ public class IIPitchUtility {
         let cls: AnyClass = NSClassFromString(className)!
         return (className, cls)
     }
-    
+
     /// aop-loop register methods
     private func registerFunctions(className: String) {
         var methodNum: UInt32 = 0
@@ -98,7 +97,7 @@ public class IIPitchUtility {
             }
         }
     }
-    
+
     /// real swizzing methods
     private func aopFunction(selector: Selector, whoseIns: AnyClass) {
         do {
