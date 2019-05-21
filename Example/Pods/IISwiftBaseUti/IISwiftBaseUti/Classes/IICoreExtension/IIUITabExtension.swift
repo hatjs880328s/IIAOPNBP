@@ -1,12 +1,12 @@
 //
 //  *******************************************
-//  
+//
 //  IIuiTabExtension.swift
 //  impcloud_dev
 //
 //  Created by Noah_Shan on 2019/3/4.
 //  Copyright © 2018 Inpur. All rights reserved.
-//  
+//
 //  *******************************************
 //
 
@@ -15,7 +15,7 @@ import SnapKit
 
 /// OOP处理空列表显示信息
 public extension UITableView {
-    public func iiExcEmailReload(isZeroCount: Bool, withNoTitle: String, imgName: String? = nil) {
+    @objc public func iiExcEmailReload(isZeroCount: Bool, withNoTitle: String, imgName: String? = nil) {
         if isZeroCount {
             let emptyVw = IIExcTabEmptyVw(frame: CGRect.zero, nonTxt: withNoTitle, imgName: imgName)
             emptyVw.frame.size = self.frame.size
@@ -59,7 +59,7 @@ public class IIExcTabEmptyVw: UIView {
         self.addSubview(bgVw)
         bgVw.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.snp.centerX)
-            make.centerY.equalTo(self.snp.centerY)
+            make.centerY.equalTo(self.snp.centerY).offset(-20)
             make.width.equalTo(IIUITabExtension.aWeight)
             make.height.equalTo(110)
         }
@@ -69,7 +69,7 @@ public class IIExcTabEmptyVw: UIView {
         bgVw.addSubview(createBtn)
         bgVw.addSubview(txtLb)
         createBtn.snp.makeConstraints { (make) in
-            make.centerY.equalTo(self.snp.centerY).offset(0)
+            make.top.equalTo(10)
             make.centerX.equalTo(self.snp.centerX)
             make.width.equalTo(61)
             make.height.equalTo(61)
@@ -82,8 +82,8 @@ public class IIExcTabEmptyVw: UIView {
         txtLb.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.snp.centerX)
             make.top.equalTo(createBtn.snp.bottom).offset(10)
-            make.left.equalTo(0)
-            make.right.equalTo(0)
+            make.width.equalTo(250)
+            make.height.equalTo(20)
         }
         txtLb.font = UIFont.systemFont(ofSize: 14)
         txtLb.textColor = UIColor(red: 221 / 255, green: 221 / 255, blue: 221 / 255, alpha: 1)

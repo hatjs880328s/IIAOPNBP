@@ -1,35 +1,43 @@
 PODS:
   - IIAOPNBP (1.0.6):
     - IISwiftBaseUti
-  - III18N (0.7.0)
-  - IISwiftBaseUti (1.1.7):
+  - III18N (0.8.0)
+  - IISwiftBaseUti (1.3.9):
     - III18N
-    - IISwiftBaseUti/IIBaseUti (= 1.1.7)
-    - IISwiftBaseUti/IICacheStorage (= 1.1.7)
-    - IISwiftBaseUti/IICoreExtension (= 1.1.7)
-    - IISwiftBaseUti/IIHardWareAuthRequest (= 1.1.7)
-    - IISwiftBaseUti/IIRecognition (= 1.1.7)
-    - IISwiftBaseUti/YYCache (= 1.1.7)
+    - IISwiftBaseUti/IIAspects (= 1.3.9)
+    - IISwiftBaseUti/IIBaseUti (= 1.3.9)
+    - IISwiftBaseUti/IICacheStorage (= 1.3.9)
+    - IISwiftBaseUti/IIComponent (= 1.3.9)
+    - IISwiftBaseUti/IICoreExtension (= 1.3.9)
+    - IISwiftBaseUti/IIHardWareAuthRequest (= 1.3.9)
+    - IISwiftBaseUti/IIRecognition (= 1.3.9)
+    - IISwiftBaseUti/YYCache (= 1.3.9)
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIBaseUti (1.1.7):
+  - IISwiftBaseUti/IIAspects (1.3.9):
     - III18N
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IICacheStorage (1.1.7):
+  - IISwiftBaseUti/IIBaseUti (1.3.9):
+    - III18N
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/IICacheStorage (1.3.9):
     - III18N
     - IISwiftBaseUti/YYCache
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IICoreExtension (1.1.7):
+  - IISwiftBaseUti/IIComponent (1.3.9):
     - III18N
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIHardWareAuthRequest (1.1.7):
+  - IISwiftBaseUti/IICoreExtension (1.3.9):
+    - III18N
+    - SnapKit (~> 4.2.0)
+  - IISwiftBaseUti/IIHardWareAuthRequest (1.3.9):
     - III18N
     - IISwiftBaseUti/IIBaseUti
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/IIRecognition (1.1.7):
+  - IISwiftBaseUti/IIRecognition (1.3.9):
     - III18N
     - IISwiftBaseUti/IICoreExtension
     - SnapKit (~> 4.2.0)
-  - IISwiftBaseUti/YYCache (1.1.7):
+  - IISwiftBaseUti/YYCache (1.3.9):
     - III18N
     - SnapKit (~> 4.2.0)
   - SnapKit (4.2.0)
@@ -49,8 +57,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   IIAOPNBP: a83a236c6156e9a5af8d74217b693c4e26c4fbb6
-  III18N: a64e35e4f9ba88d87360ab0088d829dff71fecfc
-  IISwiftBaseUti: 5cad81f5c0fb10f667203ff7ba6ae54a6749bc2b
+  III18N: 89145d37dfb9153c1f6a4243657d07dd8033dc1b
+  IISwiftBaseUti: 523d24082a6f59748537c6c6085186ac605c9a2c
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: ae570086164a4071fec3bd9e51a1e755eef42a7e
