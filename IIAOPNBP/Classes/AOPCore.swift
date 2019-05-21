@@ -21,7 +21,6 @@ import UIKit
 import Foundation
 @_exported import IISwiftBaseUti
 
-
 /*
  non-buried point(NBP) SDK : AOP layer
  collect sys event & post notification to NotificationCenter
@@ -132,6 +131,24 @@ class WebViewSwizzing: GodfatherSwizzing {
     override func aopFunction() {
         do {
             try UIWebView.aspect_hook(#selector(UIWebView.loadRequest(_:)), with: .init(rawValue: 0), usingBlock: appSendActionBlock)
+        } catch {}
+    }
+}
+
+class SetGetSwizzing: GodfatherSwizzing {
+    /// nsobject - get - set
+    let appSendActionBlock:@convention(block) (_ id: AspectInfo) -> Void = { aspectInfo in
+        AOPEventFilter.webviewFilter(aspectInfo: aspectInfo, resultAction: { (optionalEvents) in
+            if optionalEvents != nil {
+                GodfatherSwizzingPostnotification.postNotification(notiName: Notification.Name.InspurNotifications().webvwRequest, userInfo: [AOPEventType.webviewRequest: optionalEvents!])
+            }
+        })
+    }
+
+    /// 处理ios - oc - 属性get处理
+    override func aopFunction() {
+        do {
+            try NSObject.aspect_hook(#selector(NSObject.value(forKey:)), with: .init(rawValue: 0), usingBlock: appSendActionBlock)
         } catch {}
     }
 }

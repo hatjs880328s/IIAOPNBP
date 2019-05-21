@@ -38,6 +38,7 @@ static u_long pageSize = 50 * 1024;
  */
 + (void)writeData:(NSString *)fileName fileContent: (NSString *)content {
     contents = [content cStringUsingEncoding:NSUTF8StringEncoding];
+    if (contents == NULL) { contents = "GMEXEOF" ; }
     memCacheSize = strlen(contents);
     if ((nowContentLength + memCacheSize > pageSize) || nowContentLength == 0) {
         NSString *routePath = [NSString stringWithFormat:@"%@",fileName];

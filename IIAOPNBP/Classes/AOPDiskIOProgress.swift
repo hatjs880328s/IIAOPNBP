@@ -8,7 +8,7 @@
 //
 // 
 import Foundation
-
+import IISwiftBaseUti
 
 /*
  DISK-progress center
@@ -21,9 +21,10 @@ import Foundation
  4.if noah_shan folder exists one file return else analyze all expect newest file
  */
 
-public class AOPDiskIOProgress {
+public class AOPDiskIOProgress: NSObject {
     
-    private init() {
+    private override init() {
+        super.init()
         AOPDiskIOProgressUtility().createTheDir()
     }
     
@@ -48,7 +49,7 @@ public class AOPDiskIOProgress {
     }
     
     /// get all file-path
-    func getAllSavedFilepath() -> [String] {
+    @objc func getAllSavedFilepath() -> [String] {
         let result = AOPDiskIOProgressUtility().loopGetDocumentsFileExceptNewestFile()
         var realResult = [String]()
         for i in result {
@@ -68,7 +69,7 @@ public class AOPDiskIOProgress {
     }
     
     /// get one file data with file-name
-    func getOneFileDataWithFilePath(with path: String) -> Data? {
+    @objc dynamic func getOneFileDataWithFilePath(with path: String) -> Data? {
         do {
             var resultStr = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
             resultStr = resultStr.replace(find: "\0", replaceStr: "")
@@ -81,7 +82,7 @@ public class AOPDiskIOProgress {
     
     /// deleate file with filePath
     @discardableResult
-    func deleateFile(with filePath: String) -> Bool {
+    @objc dynamic func deleateFile(with filePath: String) -> Bool {
         return AOPDiskIOProgressUtility().deleateFile(with: filePath)
     }
 }

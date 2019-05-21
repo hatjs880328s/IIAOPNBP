@@ -9,15 +9,15 @@
 import Foundation
 
 /// Traverse all classes of this APP & progress them
-public class IIPitchUtility {
+public class IIPitchUtility: NSObject {
 
     private static var shareInstance: IIPitchUtility!
 
-    private init() {
-        //super.init()
+    private override init() {
+        super.init()
     }
 
-    public static func getInstance() -> IIPitchUtility {
+    @objc public static func getInstance() -> IIPitchUtility {
         if shareInstance == nil {
             shareInstance = IIPitchUtility()
         }
@@ -96,6 +96,7 @@ public class IIPitchUtility {
                 self.aopFunction(selector: methodSelector, whoseIns: anyCls.self)
             }
         }
+        free(methodlist)
     }
 
     /// real swizzing methods
