@@ -198,7 +198,7 @@
 		10CB76BDA66F5E639B6370AF97CB0D9D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
 		11638B9CB265C0C3FA3AAF0A26F3B440 /* IIAOPNBP-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IIAOPNBP-Info.plist"; sourceTree = "<group>"; };
 		12A66822B48EAAE69545C209BE461D80 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
-		150A6078928159745D78E116E97460AC /* IIAOPNBP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IIAOPNBP.framework; path = IIAOPNBP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		150A6078928159745D78E116E97460AC /* IIAOPNBP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IIAOPNBP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		166A5A81804ED2BE5EB5D72A265DF234 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		194C651237D08E5C0EC353E53956AD3C /* IIMergeSort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIMergeSort.swift; path = IISwiftBaseUti/Classes/IIBaseUti/IIMergeSort.swift; sourceTree = "<group>"; };
 		1E7D874A52D5BDDBF7B3C3E64F4FE7E4 /* IIAOPNBP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IIAOPNBP-dummy.m"; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 		41E84FD492AE6916AD01AA396E37C15D /* GCDExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCDExtension.swift; path = IISwiftBaseUti/Classes/IIBaseUti/GCDExtension.swift; sourceTree = "<group>"; };
 		423D533C75608083BE839A3479DE3DBD /* III18N-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "III18N-Info.plist"; sourceTree = "<group>"; };
 		42D20F6119ACA0232EA1191433AD86CC /* Pods-IIAOPNBP_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IIAOPNBP_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		47BB385FB854FF0E8A5673FF422FDC7E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		47BB385FB854FF0E8A5673FF422FDC7E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		49A7943E295D0D160E2241C40FFDE11E /* IIPitchCoreOBJC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IIPitchCoreOBJC.m; path = IIAOPNBP/Classes/IIPitchCoreOBJC.m; sourceTree = "<group>"; };
 		4B8B5AE21371F0C1D74D2F990F600888 /* Pods-IIAOPNBP_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IIAOPNBP_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4CC597183A7AFD0166204BE1AFE801F1 /* RecognitionValidate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionValidate.swift; path = IISwiftBaseUti/Classes/IIRecognition/RecognitionValidate.swift; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 		50165D0BFFF269F8112BAE211D183BB2 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		574852B50E937B759D0A79DCEF3860D4 /* AOP2LvlMemCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AOP2LvlMemCache.swift; path = IIAOPNBP/Classes/AOP2LvlMemCache.swift; sourceTree = "<group>"; };
 		5A30EC0E793233FF6AA824EBACD389B7 /* IISlinkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IISlinkManager.swift; path = IISwiftBaseUti/Classes/IIBaseUti/IISlinkManager.swift; sourceTree = "<group>"; };
-		5A450689A92C61FE1C09D3114D5D9886 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A450689A92C61FE1C09D3114D5D9886 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D231CD7A14FA22CF4DB0AE6CBE30B94 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		5EA26027E388BE0E7F7623A2D76F05E4 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		5F17E865B118A8140293204ED867B152 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
@@ -257,11 +257,11 @@
 		69202758C1B6897B204DFD49E0BFEF18 /* Pods-IIAOPNBP_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IIAOPNBP_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		69A4D6254E81BB412D0A3BCF98CFAF38 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
 		6A70C1D50F041613AF955014A4561A5F /* IIAOPNBP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IIAOPNBP.xcconfig; sourceTree = "<group>"; };
-		6A7734CCC50DF0899878FF32C5BA47EC /* Pods_IIAOPNBP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IIAOPNBP_Tests.framework; path = "Pods-IIAOPNBP_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7734CCC50DF0899878FF32C5BA47EC /* Pods_IIAOPNBP_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IIAOPNBP_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8A25F3CC40F3C5F8C693DF06223FE3 /* IIHardwareAuthRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIHardwareAuthRequest.swift; path = IISwiftBaseUti/Classes/IIHardWareAuthRequest/IIHardwareAuthRequest.swift; sourceTree = "<group>"; };
 		6C6453C15F4D54A3259AC1D536FA737C /* IITaskModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IITaskModel.swift; path = IISwiftBaseUti/Classes/IIBaseUti/IITaskModel.swift; sourceTree = "<group>"; };
 		6CD3C20616A158D3C4B5418E1E191956 /* RecognitionCore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionCore.swift; path = IISwiftBaseUti/Classes/IIRecognition/RecognitionCore.swift; sourceTree = "<group>"; };
-		6D6897E00CDC1D5BC6B58EADD6F663E9 /* Pods_IIAOPNBP_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IIAOPNBP_Example.framework; path = "Pods-IIAOPNBP_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6897E00CDC1D5BC6B58EADD6F663E9 /* Pods_IIAOPNBP_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IIAOPNBP_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EDFD9D75D11E2C9A68C884BA55740E /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		7101F5103FD511BBDA576290D9F80CF1 /* Pods-IIAOPNBP_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IIAOPNBP_Example-frameworks.sh"; sourceTree = "<group>"; };
 		71D1C2B741EEA62847D4861870BC4A01 /* IIAOPNBP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IIAOPNBP-prefix.pch"; sourceTree = "<group>"; };
@@ -270,7 +270,7 @@
 		7735460525128122DF491140061AE2AF /* RecognitionPatterns.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionPatterns.swift; path = IISwiftBaseUti/Classes/IIRecognition/RecognitionPatterns.swift; sourceTree = "<group>"; };
 		78EA7D11792CFF0CEE0549E6595493D5 /* IIDateExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIDateExtension.swift; path = IISwiftBaseUti/Classes/IICoreExtension/IIDateExtension.swift; sourceTree = "<group>"; };
 		7A18447E6E1C689C80F4A9AC86047E76 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		7AB3C71594FAFD7BAF5435942E6CD042 /* IISwiftBaseUti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IISwiftBaseUti.framework; path = IISwiftBaseUti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB3C71594FAFD7BAF5435942E6CD042 /* IISwiftBaseUti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IISwiftBaseUti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F242FF3BE6A099D6DB0F0C56D52A9D0 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		8176DB7799B35DFB59C52F2B9D447F28 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		82692B6EAA5AF456CCAEB7B8032B8140 /* III18N.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = III18N.xcconfig; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 		983D83FE42FED11EDF82F269D1B73179 /* III18N.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = III18N.modulemap; sourceTree = "<group>"; };
 		98C13F8716F444C5706EF5827579BFF6 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		9C2B93CABBA7FA9291140C49E766E16F /* AOPMemCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AOPMemCache.swift; path = IIAOPNBP/Classes/AOPMemCache.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A09A17CA419466A4DBC474624778C8C3 /* AOPSwiftExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AOPSwiftExtension.swift; path = IIAOPNBP/Classes/AOPSwiftExtension.swift; sourceTree = "<group>"; };
 		A0F18FA68E3700D9F021A35682C834E0 /* IIAOPNBP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IIAOPNBP.modulemap; sourceTree = "<group>"; };
 		A1296C47F2FBECA45131BA56BD24970B /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
@@ -310,7 +310,7 @@
 		BEFFD5A738EACE6D6BE88ABF150FFEC8 /* Pods-IIAOPNBP_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IIAOPNBP_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BF5A11FACDA739E4E114F8BBDB0C71B8 /* III18N-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "III18N-umbrella.h"; sourceTree = "<group>"; };
 		C0C280CB016CC0C647FF5CBDB53DDE84 /* IIPitchCoreOBJC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IIPitchCoreOBJC.h; path = IIAOPNBP/Classes/IIPitchCoreOBJC.h; sourceTree = "<group>"; };
-		C1DA5E36F763737065F46CD101F57FED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C1DA5E36F763737065F46CD101F57FED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C74FB70FB3E69B2DB8D5174C6F5FE236 /* Pods-IIAOPNBP_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IIAOPNBP_Example-dummy.m"; sourceTree = "<group>"; };
 		C7F87357E1A96FB27CF2F29A2F4B0596 /* Pods-IIAOPNBP_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IIAOPNBP_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C8628A1530F43C908326B12B5B75A0D8 /* IICalendarAuthRuequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IICalendarAuthRuequest.swift; path = IISwiftBaseUti/Classes/IIHardWareAuthRequest/IICalendarAuthRuequest.swift; sourceTree = "<group>"; };
@@ -330,11 +330,11 @@
 		EBBB0FFD9B215DB2F3AF8D72B3A1F11F /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
 		EDA06442C68812AC5B116E2C6B96B625 /* HeapSort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeapSort.swift; path = IISwiftBaseUti/Classes/IIBaseUti/HeapSort.swift; sourceTree = "<group>"; };
 		EE71A4DD31C54435D895397D9D791507 /* IIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIColorExtension.swift; path = IISwiftBaseUti/Classes/IICoreExtension/IIColorExtension.swift; sourceTree = "<group>"; };
-		EF5C7071501A5DE6DE59A1AC56014DE8 /* III18N.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = III18N.framework; path = III18N.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5C7071501A5DE6DE59A1AC56014DE8 /* III18N.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = III18N.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F156C635002DB1A6A53C5B41B5D9F694 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		F4E5B070FC2B95078FEB6B1E7C15B541 /* AOPNotificationCenterProgressCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AOPNotificationCenterProgressCenter.swift; path = IIAOPNBP/Classes/AOPNotificationCenterProgressCenter.swift; sourceTree = "<group>"; };
 		F7FA8AF36F8BE70861914F9222B3DA81 /* IIStringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IIStringExtension.swift; path = IISwiftBaseUti/Classes/IICoreExtension/IIStringExtension.swift; sourceTree = "<group>"; };
-		FA4BE93E0547FF4A69DBC416850F0404 /* IIAOPNBP.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IIAOPNBP.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FA4BE93E0547FF4A69DBC416850F0404 /* IIAOPNBP.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = IIAOPNBP.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FB5D43A661A1E0438E5656752142AE8B /* Aspects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Aspects.h; path = IISwiftBaseUti/Classes/IIAspects/Aspects.h; sourceTree = "<group>"; };
 		FD23A4CD468E8A4FE077AA2E77EA0E7E /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		FD2D10E5CA87C979EC2FAC8980097FDC /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
@@ -692,7 +692,6 @@
 				3EB14673A8CBD165FA7CDCF3B68DB884 /* IMPI18N.m */,
 				318E07362F9CF395C65635026510EA83 /* Support Files */,
 			);
-			name = III18N;
 			path = III18N;
 			sourceTree = "<group>";
 		};
@@ -746,7 +745,6 @@
 				9390316A1308C53FFC728E2A0DFF0729 /* UILayoutSupport+Extensions.swift */,
 				21419DF27E742CD43AFC4C98F33C06CA /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -763,7 +761,6 @@
 				2F87246284C296394D881B97231825AE /* Support Files */,
 				3FEC4F6FA014935854BFBFDCECAC6C3A /* YYCache */,
 			);
-			name = IISwiftBaseUti;
 			path = IISwiftBaseUti;
 			sourceTree = "<group>";
 		};
@@ -959,6 +956,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -1494,7 +1492,7 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -1682,9 +1680,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
