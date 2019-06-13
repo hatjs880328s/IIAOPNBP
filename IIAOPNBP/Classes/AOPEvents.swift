@@ -34,17 +34,7 @@ public class GodfatherEvent: NSObject {
     
     var dateFormatStr: String = "yyyy-MM-dd HH:mm:ss"
 
-    var userID: String = MMAPUserInfo.userID//IMPUserModel.activeInstance()?.exeofidString() ?? ""
 
-    var userName: String = MMAPUserInfo.userName//IMPUserModel.activeInstance()?.userName() ?? ""
-
-    var enterpriseID: Int32 = MMAPUserInfo.enterpriseID//IMPUserModel.activeInstance()?.enterprise?.id ?? 0
-
-    var deviceType: String = MMAPUserInfo.deviceType//Utilities.getDeviceModel() ?? ""
-
-    var osVersion: String = MMAPUserInfo.osVersion//Utilities.getDeviceiOSVersion() ?? ""
-
-    var appVersion: String = MMAPUserInfo.appVersion//Utilities.getAPPCurrentVersion() ?? ""
     
     /// SET INFO
     ///
@@ -60,11 +50,9 @@ public class GodfatherEvent: NSObject {
         return lhs.triggerDate == ses.triggerDate && lhs.sourceName == ses.sourceName
     }
 
+    /// ignore common userinfo
     var superDescription: String {
-        return parametersJoinedCharacter + userID + parametersJoinedCharacter + userName + parametersJoinedCharacter +
-            enterpriseID.description
-            + parametersJoinedCharacter + deviceType +
-            parametersJoinedCharacter + osVersion + parametersJoinedCharacter + appVersion
+        return ""
     }
     
     deinit {
