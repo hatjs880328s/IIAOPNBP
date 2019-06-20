@@ -1,5 +1,5 @@
 //
-// 
+//
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ** * * * *
 //
 // EventCollector.swift
@@ -20,32 +20,32 @@
 import Foundation
 
 /*
-    super class - events
- 
-*/
+ super class - events
 
-public class GodfatherEvent: NSObject {
-    
+ */
+
+@objc public class GodfatherEvent: NSObject {
+
     var triggerDate: String = ""
-    
+
     var sourceName: String = ""
-    
+
     var parametersJoinedCharacter: String = "|"
-    
+
     var dateFormatStr: String = "yyyy-MM-dd HH:mm:ss"
 
 
-    
+
     /// SET INFO
     ///
     /// - Parameters:
     ///   - eventSourceName: uicontrol name eg： BASEViewController\SmallBtn<uibutton>
     ///   - time: event trigger date
-    open func setBaseInfo(eventSourceName: String, time: Date) {
+    @objc open func setBaseInfo(eventSourceName: String, time: Date) {
         self.triggerDate = Date().dateToString(dateFormatStr)
         self.sourceName = eventSourceName
     }
-    
+
     static func == (lhs: GodfatherEvent, ses: GodfatherEvent) -> Bool {
         return lhs.triggerDate == ses.triggerDate && lhs.sourceName == ses.sourceName
     }
@@ -54,7 +54,7 @@ public class GodfatherEvent: NSObject {
     var superDescription: String {
         return ""
     }
-    
+
     deinit {
         //DEBUGPrintLog("aopevent - dealloc")
     }
@@ -62,14 +62,14 @@ public class GodfatherEvent: NSObject {
 
 /// viewcontroller-aop-acitons
 class VCEvent: GodfatherEvent {
-    
+
     var vceventType: VCEventType!
-    
+
     open func setBaseInfo(eventSourceName: String, time: Date, type: VCEventType) {
         super.setBaseInfo(eventSourceName: eventSourceName, time: time)
         self.vceventType = type
     }
-    
+
     override var description: String {
         return "E|" + sourceName + parametersJoinedCharacter + triggerDate.description +
             parametersJoinedCharacter + vceventType.rawValue + superDescription +
@@ -79,14 +79,14 @@ class VCEvent: GodfatherEvent {
 
 /// tableview-aop-actions
 class TBEvent: GodfatherEvent {
-    
+
     var indexpath: IndexPath!
-    
+
     open func setBaseInfo(eventSourceName: String, time: Date, index: IndexPath) {
         super.setBaseInfo(eventSourceName: eventSourceName, time: time)
         self.indexpath = index
     }
-    
+
     override var description: String {
         return "E|" + sourceName + parametersJoinedCharacter + triggerDate.description +
             parametersJoinedCharacter + "(section:\(indexpath.section) row:\(indexpath.row))" + superDescription +
@@ -96,14 +96,14 @@ class TBEvent: GodfatherEvent {
 
 /// uiapplication（uicontrol）-aop-sendActions
 class SendActionEvent: GodfatherEvent {
-    
+
     var controlType: IIAOPControlEventType!
-    
+
     open func setBaseInfo(eventSourceName: String, time: Date, type: IIAOPControlEventType) {
         super.setBaseInfo(eventSourceName: eventSourceName, time: time)
         self.controlType = type
     }
-    
+
     override var description: String {
         return "E|" + sourceName + parametersJoinedCharacter + triggerDate.description +
             parametersJoinedCharacter + controlType.rawValue + superDescription +
@@ -112,11 +112,11 @@ class SendActionEvent: GodfatherEvent {
 }
 
 /// api-event - opp-sendAction
-public class APIEvent: GodfatherEvent {
+@objc public class APIEvent: GodfatherEvent {
 
     var requestType: Int = 0
 
-    open func setBaseInfo(apiName: String, time: Date, requestType: Int) {
+    @objc open func setBaseInfo(apiName: String, time: Date, requestType: Int) {
         super.setBaseInfo(eventSourceName: apiName, time: time)
         self.requestType = requestType
     }
@@ -155,7 +155,7 @@ public class WebVWEvent: GodfatherEvent {
     override public var description: String {
         return "WCDB|" + sourceName + parametersJoinedCharacter + triggerDate.description +
             parametersJoinedCharacter + superDescription +
-"\n"
+        "\n"
     }
 }
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IIAOPNBP'
-  s.version          = '1.0.12'
+  s.version          = '1.0.13'
   s.summary          = '无埋点用户行为轨迹分析 & ASM核心代码'
 
 # This description is used to generate tags and improve search results.
