@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/hatjs880328s/IIAOPNBP'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2' 
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hatjs880328s' => 'shanwzh@inspur.com' }
   s.source           = { :git => 'https://github.com/hatjs880328s/IIAOPNBP.git', :tag => s.version.to_s }
