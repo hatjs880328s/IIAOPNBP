@@ -82,6 +82,7 @@ class AOPEventFilter: NSObject {
         } else if NSStringFromClass(object_getClass(instance)!) == "_UIButtonBarButton"{
             sourcename = "UINavigationController-_UIButtonBarButton"
             eventType = .uibuttonbarbutton
+            NotificationCenter.default.post(name: NSNotification.Name("UINavigationController-_UIButtonBarButton"), object: nil, userInfo: nil)
         } else if (instance as? UINavigationController) != nil {
             sourcename = "UINavigationController-poptovcFunction"
             eventType = .navigationVCPop
