@@ -117,24 +117,6 @@ class ApplicitonSwizzing: GodfatherSwizzing {
     }
 }
 
-class WebViewSwizzing: GodfatherSwizzing {
-    /// webview-loadrequest
-    let appSendActionBlock:@convention(block) (_ id: AspectInfo) -> Void = { aspectInfo in
-        AOPEventFilter.webviewFilter(aspectInfo: aspectInfo, resultAction: { (optionalEvents) in
-            if optionalEvents != nil {
-                GodfatherSwizzingPostnotification.postNotification(notiName: Notification.Name.InspurNotifications().webvwRequest, userInfo: [AOPEventType.webviewRequest: optionalEvents!])
-            }
-        })
-    }
-
-    /// webview-loadrequest
-    override func aopFunction() {
-        do {
-            try UIWebView.aspect_hook(#selector(UIWebView.loadRequest(_:)), with: .init(rawValue: 0), usingBlock: appSendActionBlock)
-        } catch {}
-    }
-}
-
 class SetGetSwizzing: GodfatherSwizzing {
     /// nsobject - get - set
     let appSendActionBlock:@convention(block) (_ id: AspectInfo) -> Void = { aspectInfo in
@@ -203,7 +185,6 @@ public class AOPNBPCoreManagerCenter: NSObject {
         ApplicitonSwizzing().aopFunction()
         TABLESwizzing().aopFunction()
         VCSwizzing().aopFunction()
-        //WebViewSwizzing().aopFunction()
         self.customLogWriteFlag = true
     }
 
