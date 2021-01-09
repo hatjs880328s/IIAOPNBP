@@ -1,5 +1,5 @@
 //
-// 
+//
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * ** * * * *
 //
 // shanGo.swift
@@ -135,6 +135,31 @@ class SetGetSwizzing: GodfatherSwizzing {
     }
 }
 
+/// ipad progress alertaction : actionsheet 2 alert
+class IPADAlert: NSObject {
+    /// hook con present function
+    let appSendActionBlock:@convention(block) (_ id: AspectInfo) -> Void = { aspectInfo in
+        guard let alertCon = aspectInfo.arguments()?.first as? UIAlertController else { return }
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let machineMirror = Mirror(reflecting: systemInfo.machine)
+        let identifier = machineMirror.children.reduce("") { identifier, element in
+            guard let value = element.value as? Int8, value != 0 else { return identifier }
+            return identifier + String(UnicodeScalar(UInt8(value)))
+        }
+        if identifier.lowercased().contains("ipad") {
+            alertCon.setValue(0, forKey: "preferredStyle")
+        }
+    }
+
+    func aopFunction() {
+        do {
+            
+            try UIViewController.aspect_hook(#selector(UIViewController.present(_:animated:completion:)), with: .init(rawValue: 0), usingBlock: appSendActionBlock)
+        } catch {}
+    }
+}
+
 /// each Event upload hex info[require]
 public class MMAPUserInfo: NSObject {
 
@@ -185,6 +210,7 @@ public class AOPNBPCoreManagerCenter: NSObject {
         ApplicitonSwizzing().aopFunction()
         TABLESwizzing().aopFunction()
         VCSwizzing().aopFunction()
+        IPADAlert().aopFunction()
         self.customLogWriteFlag = true
     }
 
