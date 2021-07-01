@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IIAOPNBP'
-  s.version          = '1.0.17'
+  s.version          = '1.0.18'
   s.summary          = '无埋点用户行为轨迹分析 & ASM核心代码'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/hatjs880328s/IIAOPNBP.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.swift_version = '5.0'
 
